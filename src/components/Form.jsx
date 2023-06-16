@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Form = props => {
   return (
     <form onSubmit={props.submitFunc}>
@@ -21,3 +23,5 @@ export const Form = props => {
     </form>
   );
 };
+
+Form.propTypes = { submitFunc: PropTypes.func.isRequired };

@@ -2,46 +2,8 @@ import React, { Component } from 'react';
 import css from './app.module.css';
 import { nanoid } from 'nanoid';
 import { Form } from './Form';
-
-const Filter = props => {
-  return (
-    <input
-      type="text"
-      name="filter"
-      pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-      title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-      // value={filter}
-      onChange={props.filterFunc}
-    />
-  );
-};
-
-const Contact = ({ id, name, number, deleteFunc }) => {
-  return (
-    <li>
-      {name} {number}{' '}
-      <button type="button" onClick={() => deleteFunc(id)}>
-        remove
-      </button>
-    </li>
-  );
-};
-
-const ContactList = props => {
-  return (
-    <ul>
-      {props.contactFunc().map(el => (
-        <Contact
-          key={el.key}
-          id={el.key}
-          name={el.name}
-          number={el.number}
-          deleteFunc={props.deleteFunc}
-        ></Contact>
-      ))}
-    </ul>
-  );
-};
+import { Filter } from './Filter';
+import { ContactList } from './ContactList';
 
 export class App extends Component {
   state = {
