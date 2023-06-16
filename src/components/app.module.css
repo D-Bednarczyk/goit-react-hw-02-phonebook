@@ -1,0 +1,24 @@
+button {
+  font-size: 25px;
+}
+
+.main_div {
+  display: flex;
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #010101;
+}
+
+form {
+  align-items: flex-start;
+  width: 500px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-style: solid;
+}
