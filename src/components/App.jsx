@@ -52,7 +52,7 @@ export class App extends Component {
           { key: nanoid(), name: name, number: number },
         ],
       });
-    console.log(this.state.contacts);
+
     form.reset();
   };
 
