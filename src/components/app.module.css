@@ -20,6 +20,8 @@ form {
   flex-direction: column;
   gap: 10px;
   border-style: solid;
+  border-color: rgb(143, 100, 146);
+  border-radius: 5px;
 }
 .main_div {
   max-width: 500px;
