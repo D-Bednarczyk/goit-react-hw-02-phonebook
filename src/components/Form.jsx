@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+import css from './Form.module.css';
 
 export const Form = props => {
   return (
-    <form onSubmit={props.submitFunc}>
+    <form className={css.form} onSubmit={props.submitFunc}>
       <label>Name</label>
       <input
+        className={css.formInput}
         type="text"
         name="name"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -13,13 +15,14 @@ export const Form = props => {
       />
       <label>Phone</label>
       <input
+        className={css.formInput}
         type="tel"
         name="number"
         pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
         title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
         required
       />
-      <button>Add contacts</button>
+      <button className={css.formBtn}>Add contacts</button>
     </form>
   );
 };

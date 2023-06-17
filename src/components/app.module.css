@@ -1,13 +1,4 @@
-button {
-  font-size: 25px;
-}
-
-input {
-  height: 35px;
-  width: 400px;
-}
-
-.main_div {
+/* . {
   display: flex;
   height: 100vh;
 
@@ -16,6 +7,9 @@ input {
   align-items: center;
   font-size: 40px;
   color: #010101;
+} */
+h2 {
+  font-size: 40px;
 }
 
 form {
@@ -26,4 +20,17 @@ form {
   flex-direction: column;
   gap: 10px;
   border-style: solid;
+}
+.main_div {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
 }

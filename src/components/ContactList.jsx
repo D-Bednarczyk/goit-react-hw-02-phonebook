@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-
+import css from './contact.module.css';
 import { Contact } from './Contact';
 
 export const ContactList = props => {
   return (
-    <ul>
+    <ul className={css.contactsItem}>
       {props.contactFunc().map(el => (
         <Contact
           key={el.key}

@@ -1,0 +1,8 @@
+.filterInput {
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 8px;
+  border-color: rgb(143, 100, 146);
+  border-radius: 5px;
+  font-size: 16px;
+}

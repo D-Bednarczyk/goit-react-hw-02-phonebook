@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
+import css from './contact.module.css';
 
 export const Contact = ({ id, name, number, deleteFunc }) => {
   return (
-    <li>
+    <li className={css.contactsItem}>
       {name} {number}{' '}
-      <button type="button" onClick={() => deleteFunc(id)}>
+      <button
+        className={css.contactBtn}
+        type="button"
+        onClick={() => deleteFunc(id)}
+      >
         remove
       </button>
     </li>

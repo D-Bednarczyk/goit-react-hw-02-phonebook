@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
+import css from './Filter.module.css';
 
 export const Filter = props => {
   return (
     <input
+      className={css.filterInput}
       type="text"
       name="filter"
       pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
